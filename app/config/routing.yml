@@ -1,0 +1,4 @@
+HaeslSurveyBundle_admin_haesl_survey_bundle_survey:
+    resource: "@HaeslSurveyBundle/Controller/Survey/"
+    type:     admingenerator
+    prefix:   /survey/

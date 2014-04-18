@@ -1,0 +1,47 @@
+{% extends 'AdmingeneratorGeneratorBundle::base_admin.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets filter='cssrewrite,?yuicss' output='assetic/css/compiled/components.min.css'
+        'components/bootstrap/css/bootstrap.css'
+        'components/bootstrap/css/bootstrap-responsive.css'
+        'components/font-awesome/css/font-awesome.css'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+    {% endstylesheets %}
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome-ie7.min') }}" type="text/css" media="all" />
+    <![endif]-->
+    {% stylesheets filter='cssrewrite,?uglifycss' output='assetic/css/compiled/admingenerator.min.css'
+        'bundles/admingeneratorgenerator/css/general.css'
+        'bundles/admingeneratorgenerator/css/profile.css'
+        'bundles/admingeneratorgenerator/css/nested-list.css'
+        'bundles/admingeneratorgenerator/css/bootstrap-extended.css'
+    %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+    {% endstylesheets %}
+
+    {% stylesheets filter='cssrewrite,?uglifycss' output='assetic/css/compiled/haeslsurveyinput.min.css'
+        'bundles/haeslsurvey/css/input.css'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+    {% endstylesheets %}
+
+    {% include 'AvocodeFormExtensionsBundle::stylesheets.html.twig' %}
+    {% if form is defined %}
+        {{ afe_form_stylesheet(form) }}
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts filter='?uglifyjs2' output='assetic/js/compiled/admingenerator.min.js'
+        'components/bootstrap/js/bootstrap.js'
+        'bundles/admingeneratorgenerator/js/admingenerator/general.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    {% include 'AvocodeFormExtensionsBundle::javascripts.html.twig' %}
+    {% if form is defined %}
+        {{ afe_form_javascript(form) }}
+    {% endif %}
+{% endblock %}
