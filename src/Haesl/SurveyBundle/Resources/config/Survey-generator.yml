@@ -1,0 +1,116 @@
+generator: admingenerator.generator.doctrine
+params:
+    model: Haesl\SurveyBundle\Entity\Survey
+    namespace_prefix: Haesl
+    concurrency_lock: ~
+    bundle_name: SurveyBundle
+    pk_requirement: ~
+    fields:
+        lovedCars:
+            label: Welche Automarken lieben sie?
+            formType: afe_select2_choice
+            formOptions:
+                choices: ['Mazda - Mein Auto zieht der Abschleppdienst', 'VW', 'Opel - ohne Power ewig Letzter']
+                multiple: true
+                expanded: true
+        lovedAirplanes:
+            label: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            formType: choice
+            formOptions:
+                choices: ['Mazda - Mein Auto zieht der Abschleppdienst', 'VW', 'Opel - ohne Power ewig Letzter']
+                multiple: true
+                expanded: true
+        hatetCars:
+            label: Welche Karren sind echte Schlurren?
+            formType: choice
+            formOptions:
+                choices: ['Mazda - Mein Auto zieht der Abschleppdienst', 'VW', 'Opel - ohne Power ewig Letzter']
+                multiple: true
+                expanded: true
+                help: "Erläuterungen zur Frage"
+        age:
+            formType: afe_autocomplete
+            label: Wie alt sind Sie?
+            formOptions:
+                help: Tragen Sie Ihr Alter ein.
+        lovedShips:
+            label: Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis.
+            formType: choice
+            formOptions:
+                choices: ['Mazda - Mein Auto zieht der Abschleppdienst', 'VW', 'Opel - ohne Power ewig Letzter']
+                multiple: true
+                expanded: true
+                help: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+        lovedTrains:
+            label:  Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            formType: choice
+            formOptions:
+                choices: ['as', 'dd', 'dds']
+                multiple: true
+                expanded: true
+                help: Ich bin multiple choice.
+        hatetAirplanes:
+            label:    Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            formType: choice
+            formOptions:
+                choices: ['as', 'dd', 'dds']
+                multiple: false
+                expanded: true
+                help: Ich bin single choice.
+        gender:
+            formType: afe_select2_choice
+            label: Anrede
+            formOptions:
+                choices: ['Herr', 'Frau']
+                multiple: false
+                expanded: false
+                help: single choice
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: List for SurveyBundle
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    filters:
+        params:
+            display: ~
+    new:
+        params:
+            title: Umfrage
+            display:
+                Alter und Geschlecht oder anderer Text: [[age], [gender]]
+                #Autofragen: [[lovedCars], [hatetCars], [hatetAirplanes]]
+                #Flugzeugfragen: [lovedAirplanes]
+                #Schifffragen: [lovedShips]
+                #Bahnfragen: [lovedTrains]
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the object \"%object%\"|{ %object%: Survey.title }|"
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the object \"%object%\"|{ %object%: Survey.title }|"
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

@@ -1,0 +1,32 @@
+Haesl\SurveyBundle\Entity\Survey:
+    type: entity
+    table: haesl_survey
+    repositoryClass: Haesl\SurveyBundle\Entity\SurveyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+    # add fields and then run
+    # php app/console doctrine:generate:entities Haesl/SurveyBundle/Entity/Survey
+        gender:
+            type: array
+        age:
+            type: integer
+        lovedTrains:
+            column: loved_trains
+        lovedCars:
+            column: loved_cars
+        lovedShips:
+            column: loved_ships
+        lovedAirplanes:
+            column: loved_airplanes
+        hatetAirplanes:
+            column: hatet_airplanes
+        hatetShips:
+            column: hatet_ships
+        hatetCars:
+            column: hatet_cars
+    lifecycleCallbacks: {  }

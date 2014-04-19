@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9e866c9b328b336fba54150ef73e8cc2",
+    "hash": "c776866b8e8602dd729b79a03c050e11",
     "packages": [
         {
             "name": "afarkas/html5shiv",
@@ -45,13 +45,13 @@
             "target-dir": "Avocode/FormExtensionsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/avocode/FormExtensions.git",
-                "reference": "06bc81d4618f89a5c800b659f4764a5e51154695"
+                "url": "https://github.com/robertfausk/FormExtensions.git",
+                "reference": "efba35df15f34d5a348d7495404d467d698bcc5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avocode/FormExtensions/zipball/06bc81d4618f89a5c800b659f4764a5e51154695",
-                "reference": "06bc81d4618f89a5c800b659f4764a5e51154695",
+                "url": "https://api.github.com/repos/robertfausk/FormExtensions/zipball/efba35df15f34d5a348d7495404d467d698bcc5d",
+                "reference": "efba35df15f34d5a348d7495404d467d698bcc5d",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,6 @@
                     "Avocode\\FormExtensionsBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT and Apache-2.0"
             ],
@@ -91,7 +90,10 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2014-02-18 17:36:33"
+            "support": {
+                "source": "https://github.com/robertfausk/FormExtensions/tree/master"
+            },
+            "time": "2014-01-14 07:37:48"
         },
         {
             "name": "cedriclombardot/admingenerator-generator-bundle",

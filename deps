@@ -1,0 +1,20 @@
+
+[TwigGenerator]
+    git=git://github.com/cedriclombardot/TwigGenerator.git
+    target=/twig-generator
+
+[twig-extensions]
+    git=git://github.com/fabpot/Twig-extensions.git
+    target=/twig-extensions
+
+[WhiteOctoberPagerfantaBundle]
+    git=git://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git
+    target=/bundles/WhiteOctober/PagerfantaBundle
+
+[KnpMenuBundle]
+    git=git://github.com/KnpLabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+
+[KnpMenu]
+    git=git://github.com/KnpLabs/KnpMenu.git
+    target=/KnpMenu
