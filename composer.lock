@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c776866b8e8602dd729b79a03c050e11",
+    "hash": "332ec2528f469f2fa1cac71780bc6dde",
     "packages": [
         {
             "name": "afarkas/html5shiv",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aFarkas/html5shiv.git",
-                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584"
+                "reference": "eb0bd4173238ba59da4dfa43090008bd18d3bd64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/a4d4dcbe0875ba10c4c56c54454ae93031d59584",
-                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584",
+                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/eb0bd4173238ba59da4dfa43090008bd18d3bd64",
+                "reference": "eb0bd4173238ba59da4dfa43090008bd18d3bd64",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
             ],
             "description": "Defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.",
             "homepage": "http://paulirish.com/2011/the-history-of-the-html5-shiv/",
-            "time": "2013-09-23 07:20:29"
+            "time": "2014-04-20 14:39:51"
         },
         {
             "name": "avocode/form-extensions-bundle",
@@ -46,12 +46,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robertfausk/FormExtensions.git",
-                "reference": "efba35df15f34d5a348d7495404d467d698bcc5d"
+                "reference": "5484192dab291798b77dd72002e08b9b7dd6694a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robertfausk/FormExtensions/zipball/efba35df15f34d5a348d7495404d467d698bcc5d",
-                "reference": "efba35df15f34d5a348d7495404d467d698bcc5d",
+                "url": "https://api.github.com/repos/robertfausk/FormExtensions/zipball/5484192dab291798b77dd72002e08b9b7dd6694a",
+                "reference": "5484192dab291798b77dd72002e08b9b7dd6694a",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
             "support": {
                 "source": "https://github.com/robertfausk/FormExtensions/tree/master"
             },
-            "time": "2014-01-14 07:37:48"
+            "time": "2014-04-19 14:17:19"
         },
         {
             "name": "cedriclombardot/admingenerator-generator-bundle",
@@ -1341,16 +1341,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1afc39690e7414412face1f8cbf67b73db34485c",
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c",
                 "shasum": ""
             },
             "require": {
@@ -1378,7 +1378,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -1405,7 +1405,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-23 19:50:26"
+            "time": "2014-04-20 16:41:26"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1816,21 +1816,21 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.1.1",
+            "version": "v1.2.1",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "0b82950ece96c1f091dcdb088298bd72dbc83a47"
+                "reference": "98e197da54df1f966dd5e8a4992135703569c987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/0b82950ece96c1f091dcdb088298bd72dbc83a47",
-                "reference": "0b82950ece96c1f091dcdb088298bd72dbc83a47",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/98e197da54df1f966dd5e8a4992135703569c987",
+                "reference": "98e197da54df1f966dd5e8a4992135703569c987",
                 "shasum": ""
             },
             "require": {
-                "lib-icu": ">=3.8",
+                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -1860,7 +1860,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-10-04 10:05:23"
+            "time": "2013-10-04 10:06:38"
         },
         {
             "name": "symfony/monolog-bundle",

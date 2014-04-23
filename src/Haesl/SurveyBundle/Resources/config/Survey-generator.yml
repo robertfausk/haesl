@@ -33,6 +33,28 @@ params:
             label: Wie alt sind Sie?
             formOptions:
                 help: Tragen Sie Ihr Alter ein.
+                source: >
+                        function( request, response ) {
+                             $.ajax({
+                                   url: "http://api.geonames.org/searchJSON",
+                                   dataType: "jsonp",
+                                   data: {
+                                       username: "demo",
+                                       featureClass: "P",
+                                       style: "full",
+                                       maxRows: 12,
+                                       name_startsWith: request.term
+                                   },
+                                   success: function( data ) {
+                                       response( $.map( data.geonames, function( item ) {
+                                           return {
+                                               label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                                               value: item.name
+                                           }
+                                       }));
+                                   }
+                               })
+                           }
         lovedShips:
             label: Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis.
             formType: choice
